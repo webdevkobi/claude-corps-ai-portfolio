@@ -40,23 +40,23 @@ export type CaseStudy = {
 
 export const fitSignals: FitSignal[] = [
   {
-    title: "Discovers before building",
-    text: "Turns vague workflow pain into concrete sprints, inputs, success checks, and owner-ready next actions.",
+    title: "Starts with the real workflow",
+    text: "I talk to people, watch the process, and find where time or attention is leaking before deciding what to build.",
     icon: ClipboardCheck,
   },
   {
-    title: "Builds usable AI systems",
-    text: "Ships dashboards, automations, private apps, integrations, and feedback loops with Claude, Codex, Notion, APIs, and web tooling.",
+    title: "Builds tools people actually use",
+    text: "Dashboards, automations, private apps, integrations, and feedback loops are only useful if they make the day easier.",
     icon: Bot,
   },
   {
-    title: "Teaches mixed rooms",
-    text: "Explains systems to students, athletes, founders, and nontechnical users without making the tool the point.",
+    title: "Explains without making people feel small",
+    text: "I can teach students, athletes, founders, and nontechnical users because I care more about whether it lands than how fancy it sounds.",
     icon: GraduationCap,
   },
   {
-    title: "Hands off cleanly",
-    text: "Documents guardrails, runbooks, source-of-truth rules, and deployment holds so someone else can safely own the system.",
+    title: "Leaves something someone can own",
+    text: "The goal is not for people to need me forever. The goal is a tool, habit, or workflow they can keep using after I leave.",
     icon: ShieldCheck,
   },
 ];
@@ -64,25 +64,25 @@ export const fitSignals: FitSignal[] = [
 export const caseStudies: CaseStudy[] = [
   {
     id: "content-system",
-    title: "Champions Voice AI Content Operating System",
-    eyebrow: "Human-in-the-loop growth engine",
+    title: "Champions Voice Content OS",
+    eyebrow: "Weekly review into weekly action",
     image: "content-system.png",
-    alt: "Redacted Notion captures showing a weekly content calendar, content matrix, performance metrics, and next-week iteration brief.",
-    stack: ["Notion", "Claude", "ChatGPT Projects", "Instagram analytics", "Weekly evals"],
-    metric: "20.7K followers in roughly 2-3 months",
+    alt: "Redacted Notion captures showing a weekly content calendar, content matrix, performance review, and next-week iteration brief.",
+    stack: ["Notion", "Claude", "ChatGPT", "Instagram analytics", "Human review"],
+    metric: "20K+ followers in two months",
     summary:
-      "A weekly operating system that turns content performance into the next plan: post links, analytics, audience comments, human judgment, then AI-generated experiments for the following week.",
+      "Every week I look at what worked, what missed, and what young athletes actually responded to. Then I use AI to turn those notes into the next week of content while I keep the final judgment.",
     problem:
-      "Champions Voice needed a repeatable content engine that preserved Jakobi's voice while moving faster than manual weekly planning.",
+      "I was trying to build something that could help thousands of student-athletes, but planning everything manually made it too easy to miss patterns or repeat the wrong thing.",
     shipped: [
-      "Created a Creator Vision source of truth and weekly feedback workflow for hooks, formats, CTAs, and content pillars.",
-      "Analyzed weekly performance with a human review layer before asking AI to generate the next 7-day matrix.",
-      "Captured learning from outlier posts, including 250K+ and 500K+ view formats that shaped the next weekly experiments.",
+      "Built a weekly Notion system for content ideas, hooks, formats, CTAs, analytics, and audience feedback.",
+      "Created a human-in-the-loop review where I decide what actually mattered before AI helps build the next week.",
+      "Used outlier posts, including 250K+ and 500K+ view formats, to shape the next experiments instead of guessing.",
     ],
     handoff:
-      "The system is understandable as a weekly runbook: collect links, paste analytics, record what landed, generate next-week experiments, then review before publishing.",
+      "A teammate could open the calendar, see the week, understand why posts worked, and keep the loop going without needing to guess how I think.",
     signal:
-      "Matches Claude Corps work: evaluation loops, stakeholder judgment, nontechnical ownership, and measurable social-impact reach.",
+      "This is the same muscle Claude Corps needs: learn the actual workflow, build with AI, keep judgment in the room, and teach the system.",
     icon: ChartNoAxesCombined,
   },
   {
@@ -90,22 +90,22 @@ export const caseStudies: CaseStudy[] = [
     title: "ManyChat to Notion Lead Capture Funnel",
     eyebrow: "Audience to owned relationship",
     image: "lead-funnel.png",
-    alt: "Redacted Vercel deployment screenshot and flow summary for a ManyChat to Notion connector.",
+    alt: "Redacted Notion client list showing the ManyChat to Notion lead system with private emails blurred.",
     stack: ["ManyChat", "Notion", "Instagram DMs", "Client database", "Automation"],
-    metric: "350-400 emails captured in 2-3 weeks",
+    metric: "1,500+ emails collected in two months",
     summary:
-      "A connector that moved Instagram interest into an owned Notion client list with source, email, lead status, latest interaction, and notes.",
+      "The audience was not just views. People raised their hand, gave me an email, and became someone I could actually follow up with and help.",
     problem:
-      "Followers were engaging through rented social platforms, but the business needed a reliable client list that could be followed up and understood.",
+      "Instagram attention disappears fast. I needed a real client list so interest from DMs could become owned relationships instead of getting lost.",
     shipped: [
-      "Mapped the Notion client-list schema around the real follow-up workflow rather than a generic CRM template.",
-      "Connected DM-driven calls-to-action to email capture and Notion records.",
-      "Kept personal contact records out of public artifacts while preserving the system architecture for review.",
+      "Connected DM-driven calls-to-action to email capture and a Notion client list.",
+      "Tracked names, lead status, source, latest interaction, and follow-up context in one place.",
+      "Redacted private emails in the public portfolio while still showing the actual system shape.",
     ],
     handoff:
-      "The handoff surface is a plain-language database schema plus a flow diagram that explains where each field comes from and how to audit a failed capture.",
+      "The owner sees the client list, understands what each field is for, and has one clear place to check follow-up instead of hunting through DMs.",
     signal:
-      "Shows the ability to build integrations that make a nonprofit or public-interest team faster without forcing them into a complex new tool.",
+      "Shows the kind of practical integration a host organization may need: take real interest from people and turn it into follow-up that does not get dropped.",
     icon: Users,
   },
   {
@@ -115,7 +115,7 @@ export const caseStudies: CaseStudy[] = [
     image: "training-app.png",
     alt: "Redacted Driveline Trainer dashboard screenshot showing home, coach build, calendar, and workout library navigation.",
     stack: ["Node.js", "Vercel", "Blob storage", "Mobile web", "Data cleanup"],
-    metric: "402 events, 98 variants, 2,374 exercise rows",
+    metric: "Two years of training history made usable",
     summary:
       "A mobile and desktop training app built from two years of exported training data. Recommendations select existing source plans instead of inventing workouts.",
     problem:
@@ -126,9 +126,9 @@ export const caseStudies: CaseStudy[] = [
       "Preserved sets, reps, rest, load, notes, and plan variants so the app stayed source-faithful.",
     ],
     handoff:
-      "The README documents local run steps, cloud access assumptions, data fidelity rules, and what the app refuses to invent.",
+      "The next owner can see how to run it, what data it trusts, and what the app is not allowed to make up.",
     signal:
-      "Demonstrates end-to-end product judgment: private data boundaries, source truth, mobile usability, and practical AI-assisted planning.",
+      "Demonstrates end-to-end product judgment: private data boundaries, mobile usability, and practical AI-assisted planning.",
     icon: Code2,
   },
   {
@@ -138,66 +138,66 @@ export const caseStudies: CaseStudy[] = [
     image: "daily-brief.png",
     alt: "Redacted daily inbox brief screenshot with brand deals, opportunities, drafts ready, and blurred email details.",
     stack: ["HTML", "CSS", "JavaScript", "Gmail links", "Scheduled desktop automation"],
-    metric: "8:00 AM daily operating rhythm",
+    metric: "Daily need-to-know brief before the day starts",
     summary:
-      "A morning dashboard that classifies inbox threads into brand deals, opportunities, and filtered noise with reasons and next actions.",
+      "A morning dashboard that pulls the important inbox context forward so I can start the day with signal instead of sorting through noise.",
     problem:
-      "Important business opportunities were mixed with low-value inbox volume, adding daily cognitive overhead before meaningful work started.",
+      "Important business opportunities were mixed with low-value inbox volume, which meant attention was getting spent before the real work even started.",
     shipped: [
       "Built a polished local brief that opens each morning with priority counts, reasons, direct thread links, and suggested next action.",
       "Packaged the workflow as a scheduled desktop task rather than a fragile one-off script.",
       "Kept sensitive names and email addresses redacted in the public portfolio evidence.",
     ],
     handoff:
-      "The handoff is operational: local files, task schedule, launch script, and a dashboard that explains why each item matters.",
+      "The dashboard explains what matters and why, so someone else could follow the morning rhythm without learning the whole inbox first.",
     signal:
-      "This is the kind of small but high-leverage automation Claude Corps hosts often need: not flashy, just durable and useful.",
+      "This is the kind of small but high-leverage automation Claude Corps hosts often need: not flashy, just useful every day.",
     icon: MailCheck,
   },
   {
     id: "shopify-ops",
-    title: "Champions Voice Shopify Web Ops",
-    eyebrow: "Safe deployment discipline",
+    title: "Champions Voice Landing Page and Web Ops",
+    eyebrow: "Public front door for the work",
     image: "shopify-ops.png",
-    alt: "Neutral operations visual summarizing Shopify deployment guardrails, verified work paths, and theme check status.",
-    stack: ["Shopify Liquid", "GitHub", "Theme Check", "Accessibility", "Runbooks"],
-    metric: "0 Theme Check errors on latest local batch",
+    alt: "Champions Voice landing page screenshot showing the public storefront hero.",
+    stack: ["Shopify", "GitHub", "Landing page QA", "Accessibility", "Content ops"],
+    metric: "Storefront work kept in a review-first flow",
     summary:
-      "An AI-assisted website manager workflow for auditing, improving, documenting, and holding changes until a safe sandbox review target exists.",
+      "The site is the public front door for Champions Voice. I used AI to help audit, improve, and document the work while keeping final judgment on what should ship.",
     problem:
-      "The store needed ongoing UX, accessibility, copy, and conversion improvements without accidentally pushing unfinished changes live.",
+      "The brand needed a cleaner path from attention to waitlist and products without accidentally pushing unfinished changes live.",
     shipped: [
-      "Audited and fixed CTA paths, search/cart empty states, heading hierarchy, reduced-motion behavior, and mobile overflow issues.",
-      "Maintained a daily ops dashboard with blockers, verified paths, shipped changes, and next recommended batch.",
-      "Stopped deployment when the supposed sandbox theme was discovered to be live.",
+      "Audited CTA paths, mobile layout, empty states, headings, and accessibility details.",
+      "Used AI as a second set of eyes for changes that were tedious to check manually.",
+      "Stopped deployment when the supposed sandbox theme turned out to be live.",
     ],
     handoff:
-      "The ops docs define done, review gates, preview paths, and the exact condition that blocks a push.",
+      "Someone taking over can see what was checked, what changed, and when not to push live.",
     signal:
-      "Shows judgment under constraints: sometimes the right technical move is telling a stakeholder not to ship yet.",
+      "Shows judgment under constraints: sometimes the right technical move is telling someone not to ship yet.",
     icon: Store,
   },
 ];
 
 export const operatingPrinciples = [
   {
-    title: "Source truth first",
-    text: "AI is allowed to accelerate decisions, but important facts live in source systems, docs, schemas, and runbooks.",
+    title: "I build around my attention",
+    text: "I know I can only put my full attention in so many places. AI helps me build systems so important things do not fall through the holes.",
     icon: BookOpenCheck,
   },
   {
     title: "Small tools count",
-    text: "A dashboard or tracker that reliably saves time is treated as real infrastructure, not a side quest.",
+    text: "A morning brief, a tracker, or a client list can change the whole day when it removes a tedious task from my brain.",
     icon: PanelsTopLeft,
   },
   {
-    title: "Enablement is the finish line",
-    text: "The work is not done when the tool works; it is done when a real person can own it after handoff.",
+    title: "AI gives me autonomy",
+    text: "It lets me decide how I want to spend my day instead of letting admin work decide for me.",
     icon: Handshake,
   },
   {
-    title: "Judgment beats demos",
-    text: "The portfolio includes holds, privacy redactions, and source-faithful constraints because those choices matter in real organizations.",
+    title: "I still stay in the loop",
+    text: "AI can sort, summarize, and draft. I still make the judgment calls, especially when people are involved.",
     icon: Wrench,
   },
 ];

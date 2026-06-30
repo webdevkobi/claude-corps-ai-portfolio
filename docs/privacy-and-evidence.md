@@ -6,7 +6,7 @@ This portfolio is designed for public review without exposing private records.
 
 - Sanitized, desaturated screenshots of real workflows.
 - High-level metrics that were used in the Claude Corps resume.
-- Architecture, handoff, and judgment notes for each project.
+- Architecture, ownership, and judgment notes for each project.
 
 ## What is intentionally withheld
 

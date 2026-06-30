@@ -2,7 +2,7 @@
 
 Focused portfolio site for the Claude Corps fellowship application.
 
-This repository is intentionally separate from Jakobi's general web-dev and Shopify repositories. It presents the strongest AI implementation projects as case studies for reviewers who care about scoping, building, teaching, handoff, and judgment.
+This repository is intentionally separate from Jakobi's general web-dev and Shopify repositories. It presents the strongest AI implementation projects as case studies for reviewers who care about scoping, building, teaching, ownership, and judgment.
 
 ## Live Site
 
@@ -12,18 +12,18 @@ https://webdevkobi.github.io/claude-corps-ai-portfolio/
 
 ## What This Portfolio Shows
 
-- Champions Voice AI content operating system
-- ManyChat to Notion lead capture funnel
+- Champions Voice content OS that helped gain 20K+ followers in two months
+- ManyChat to Notion lead capture funnel with 1,500+ emails collected in two months
 - Private Driveline training app
 - Daily inbox brief automation
-- Champions Voice Shopify web ops manager workflow
+- Champions Voice landing page and web ops workflow
 
 Each case study includes:
 
 - the operational problem
 - what shipped
 - the tools and stack involved
-- the handoff surface
+- how someone else could keep owning the work
 - why it maps to Claude Corps responsibilities
 
 ## Privacy Boundary

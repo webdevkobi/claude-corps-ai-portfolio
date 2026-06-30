@@ -19,6 +19,8 @@ SOURCE_FILES = {
     "iteration": "codex-clipboard-e0ef723d-04a1-4a4d-884a-2e313e1b977b.png",
     "vercel": "codex-clipboard-6351f9b6-db1f-4465-a407-9a513ec0abec.png",
     "brief": "codex-clipboard-462eb78d-486d-4415-a161-49721d392215.png",
+    "client_list": "codex-clipboard-a679542f-a570-40fa-bff7-fe97a3c19430.png",
+    "landing": "codex-clipboard-3945c365-eb60-4aae-bc0f-b1da4e69cf92.png",
 }
 
 CREAM = "#f4efe6"
@@ -206,26 +208,25 @@ def fallback(title: str, subtitle: str, name: str):
 
 
 def content_system():
-    sources = {key: load_source(key) for key in ["calendar", "week_plan", "metrics", "feedback", "iteration"]}
+    sources = {key: load_source(key) for key in ["calendar", "week_plan", "feedback", "iteration"]}
     if not all(sources.values()):
         return fallback("Champions Voice Content OS", "Weekly review becomes next-week strategy.", "content-system.png")
 
-    calendar = neutralize(crop(sources["calendar"], (112, 86, 1448, 806)))
-    week_plan = neutralize(crop(sources["week_plan"], (250, 72, 1404, 816)))
-    metrics = neutralize(crop(sources["metrics"], (0, 140, 1150, 352)))
-    metrics = blur_regions(metrics, [(150, 0, metrics.width, 46)], "links redacted")
-    iteration = neutralize(crop(sources["iteration"], (18, 44, 1110, 606)))
+    calendar = neutralize(sources["calendar"], color=0.06, brightness=1.05)
+    week_plan = neutralize(sources["week_plan"], color=0.06, brightness=1.05)
+    feedback = neutralize(sources["feedback"], color=0.06, brightness=1.05)
+    iteration = neutralize(sources["iteration"], color=0.08, brightness=1.04)
 
     canvas, draw = board(
         "Champions Voice Content OS",
-        "Real Notion workflow: calendar, weekly matrix, metrics review, and next-week iteration plan.",
+        "The full workflow: weekly calendar, content matrix, end-of-week review, and next-week plan.",
     )
-    paste_panel(canvas, calendar, (56, 198, 710, 506), "cover", "Weekly content database")
-    paste_panel(canvas, week_plan, (734, 198, 1344, 506), "cover", "Seven-day content matrix")
-    paste_panel(canvas, metrics, (56, 540, 710, 842), "cover", "Performance metrics, links redacted")
-    paste_panel(canvas, iteration, (734, 540, 1344, 842), "cover", "AI-ready iteration brief")
-    draw.text((76, 880), "20.7K followers", fill=BLACK, font=HEAD)
-    draw_text(draw, (314, 884), "Human review selects what to repeat, improve, or stop before AI generates the next plan.", 820, fill=MUTED, font_=REG)
+    paste_panel(canvas, calendar, (56, 198, 690, 510), "contain", "Weekly content database")
+    paste_panel(canvas, week_plan, (716, 198, 1344, 510), "contain", "Seven-day content matrix")
+    paste_panel(canvas, feedback, (56, 546, 690, 846), "contain", "End-of-week feedback")
+    paste_panel(canvas, iteration, (716, 546, 1344, 846), "contain", "Next-week iteration plan")
+    draw.text((76, 882), "20K+ followers  |  1,500 emails  |  two months", fill=BLACK, font=HEAD)
+    draw_text(draw, (76, 920), "I review what landed first. Then AI helps turn that feedback into the next week.", 980, fill=MUTED, font_=SMALL)
     canvas.convert("RGB").save(OUT / "content-system.png", quality=92)
 
 
@@ -241,39 +242,37 @@ def training_app():
         "Mobile and desktop training app built from exported workout history.",
     )
     paste_panel(canvas, shot, (56, 190, 1344, 820), "contain", "Live app dashboard")
-    draw.text((76, 864), "402 events  |  98 variants  |  2,374 exercise rows", fill=BLACK, font=HEAD)
+    draw.text((76, 864), "Two years of training history, usable on mobile and desktop", fill=BLACK, font=HEAD)
     draw_text(draw, (76, 908), "Recommendations stay source-faithful and never invent replacement workouts.", 980, fill=MUTED, font_=REG)
     canvas.convert("RGB").save(OUT / "training-app.png", quality=92)
 
 
 def lead_funnel():
-    src = load_source("vercel")
+    src = load_source("client_list")
     if not src:
-        return fallback("ManyChat to Notion Lead Funnel", "Deployed connector evidence, redacted for privacy.", "lead-funnel.png")
-    shot = neutralize(crop(src, (260, 68, 1454, 710)), color=0.10, brightness=1.02)
+        return fallback("ManyChat to Notion Lead Funnel", "Client list evidence, redacted for privacy.", "lead-funnel.png")
+    shot = neutralize(crop(src, (0, 168, 1137, 740)), color=0.08, brightness=1.04)
     shot = blur_regions(
         shot,
         [
-            (436, 76, 1062, 182),
-            (430, 206, 1068, 274),
-            (0, 0, 206, 58),
-            (0, 522, 260, 642),
+            (136, 205, 348, 538),
+            (452, 198, 720, 538),
         ],
-        "private",
+        "contacts redacted",
     )
 
     canvas, draw = board(
         "ManyChat to Notion Lead Funnel",
-        "Production connector evidence with deployment details and account data redacted.",
+        "A real client list created from Instagram interest, with private emails blurred.",
     )
-    paste_panel(canvas, shot, (56, 190, 1344, 758), "cover", "Vercel deployment overview")
+    paste_panel(canvas, shot, (56, 190, 1344, 790), "contain", "Notion client list, emails blurred")
     glass_rect(canvas, (116, 792, 1284, 902), fill=(255, 253, 248, 178))
     draw.text((148, 824), "Instagram DM", fill=BLACK, font=MED)
     draw.line((300, 838, 430, 838), fill=BLACK, width=3)
     draw.text((458, 824), "ManyChat capture", fill=BLACK, font=MED)
     draw.line((682, 838, 812, 838), fill=BLACK, width=3)
     draw.text((840, 824), "Notion client list", fill=BLACK, font=MED)
-    draw_text(draw, (148, 866), "350-400 emails captured in 2-3 weeks, without publishing private contacts.", 960, fill=MUTED, font_=SMALL)
+    draw_text(draw, (148, 866), "1,500+ emails collected in two months without publishing private contact details.", 960, fill=MUTED, font_=SMALL)
     canvas.convert("RGB").save(OUT / "lead-funnel.png", quality=92)
 
 
@@ -294,7 +293,7 @@ def daily_brief():
 
     canvas, draw = board(
         "Daily Inbox Brief",
-        "8 AM operating dashboard for deals, opportunities, and drafts.",
+        "Morning operating dashboard for deals, opportunities, and drafts.",
     )
     paste_panel(canvas, shot, (56, 190, 894, 852), "contain", "Inbox dashboard, private emails blurred")
     glass_rect(canvas, (930, 190, 1344, 852), fill=(255, 253, 248, 166))
@@ -308,32 +307,19 @@ def daily_brief():
 
 
 def shopify_ops():
-    canvas, draw = board(
-        "Champions Voice Shopify Web Ops",
-        "Safe website operations with explicit review gates and deployment holds.",
-    )
-    glass_rect(canvas, (70, 190, 640, 392), fill=(255, 253, 248, 168))
-    draw.text((108, 232), "Deployment judgment", fill=BLACK, font=HEAD)
-    draw_text(draw, (108, 292), "Held deploy when the supposed sandbox was discovered to be live.", 450, fill=MUTED, font_=REG)
-    glass_rect(canvas, (690, 190, 1330, 392), fill=(16, 16, 16, 236))
-    draw.text((738, 246), "0", fill=WHITE, font=BIG)
-    draw_text(draw, (842, 258), "Theme Check errors on latest local batch", 380, fill=WHITE, font_=HEAD)
-    draw_text(draw, (842, 322), "Warnings documented. Live promotion waits for approval.", 380, fill="#cfc7ba", font_=SMALL)
+    src = load_source("landing")
+    if not src:
+        return fallback("Champions Voice Landing Page", "Public front door for the work.", "shopify-ops.png")
+    shot = neutralize(crop(src, (24, 88, 1429, 724)), color=0.18, contrast=0.98, brightness=1.04)
 
-    glass_rect(canvas, (70, 452, 1330, 840), fill=(255, 253, 248, 156))
-    draw.text((108, 498), "Verified work paths", fill=BLACK, font=HEAD)
-    rows = [
-        ("Search/cart states", "Waitlist CTAs, no duplicate fallback copy"),
-        ("Accessibility", "Heading hierarchy, focus-visible outlines, reduced-motion handling"),
-        ("Mobile QA", "390px checks for headers, forms, CTAs, and product paths"),
-        ("Runbook", "Daily dashboard tracks blockers, shipped changes, and next batch"),
-    ]
-    y = 570
-    for title, desc in rows:
-        draw.rounded_rectangle((112, y + 4, 136, y + 28), radius=8, fill=BLACK)
-        draw.text((166, y), title, fill=INK, font=MED)
-        draw_text(draw, (450, y), desc, 700, fill=MUTED, font_=REG)
-        y += 68
+    canvas, draw = board(
+        "Champions Voice Landing Page",
+        "The public front door for the work: recruiting, academics, training, and the waitlist.",
+    )
+    paste_panel(canvas, shot, (56, 190, 1344, 800), "contain", "Live storefront hero")
+    glass_rect(canvas, (116, 820, 1284, 926), fill=(255, 253, 248, 178))
+    draw.text((148, 846), "AI helped audit the tedious parts. I still decided what should ship.", fill=BLACK, font=HEAD)
+    draw_text(draw, (148, 888), "The useful part is judgment: clean paths, safer changes, and a site that matches the brand.", 980, fill=MUTED, font_=SMALL)
     canvas.convert("RGB").save(OUT / "shopify-ops.png", quality=92)
 
 
@@ -347,12 +333,12 @@ def og_image():
     draw_text(
         draw,
         (132, 330),
-        "AI workflows, automations, training tools, lead systems, and handoff-ready operations.",
+        "AI workflows, automations, training tools, lead systems, and owner-ready operations.",
         820,
         fill=MUTED,
         font_=font("segoeui.ttf", 30),
     )
-    for i, label in enumerate(["20.7K followers", "350-400 leads", "2,374 rows", "8 AM brief"]):
+    for i, label in enumerate(["20K+ followers", "1,500 emails", "2 months", "daily briefs"]):
         x = 132 + i * 244
         draw.rounded_rectangle((x, 470, x + 206, 528), radius=8, fill=BLACK)
         draw.text((x + 20, 488), label, fill=WHITE, font=SMALL_BOLD)

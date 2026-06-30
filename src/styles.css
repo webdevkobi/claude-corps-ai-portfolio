@@ -335,6 +335,14 @@ h3 {
   line-height: 1.5;
 }
 
+.section-intro {
+  max-width: 790px;
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.6;
+}
+
 .fit-grid,
 .principle-grid {
   display: grid;

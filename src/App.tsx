@@ -27,17 +27,18 @@ function App() {
         <nav className="top-nav" aria-label="Primary navigation">
           <a href="#case-studies">Case Studies</a>
           <a href="#fit">Fit</a>
-          <a href="#handoff">Handoff</a>
+          <a href="#handoff">How I Work</a>
         </nav>
       </header>
 
       <section id="top" className="hero-section">
         <div className="hero-copy">
           <p className="eyebrow">AI workflow builder | educator | founder</p>
-          <h1>Jakobi Davis builds the useful AI systems that keep working after the demo.</h1>
+          <h1>Jakobi Davis builds AI systems that give people more room to do the human part.</h1>
           <p className="hero-lede">
-            Focused portfolio for Claude Corps: scoped workflows, Claude-assisted builds,
-            nontechnical enablement, privacy-aware evidence, and handoff discipline.
+            Focused portfolio for Claude Corps: real workflows I scoped, built, tested, and
+            made usable with Claude. The point is not AI for the demo. The point is getting
+            tedious work off the board so people can spend their attention where it matters.
           </p>
           <div className="hero-actions" aria-label="Primary links">
             {links.map(({ href, label, icon: Icon }) => (
@@ -52,14 +53,14 @@ function App() {
         <aside className="hero-evidence" aria-label="Portfolio evidence highlights">
           <div className="metric-block">
             <span>Selected impact</span>
-            <strong>20.7K</strong>
-            <p>Champions Voice followers gained in roughly 2-3 months through an AI-assisted weekly content loop.</p>
+            <strong>20K+</strong>
+            <p>Champions Voice followers gained in two months through an AI-assisted weekly feedback loop that reached thousands of young athletes.</p>
           </div>
           <div className="mini-grid">
-            <span>350-400 emails</span>
-            <span>2,374 rows cleaned</span>
-            <span>8 AM brief</span>
-            <span>0 theme errors</span>
+            <span>1,500 emails</span>
+            <span>2 months</span>
+            <span>daily AI briefs</span>
+            <span>human in the loop</span>
           </div>
         </aside>
       </section>
@@ -149,7 +150,13 @@ function App() {
       <section id="handoff" className="section-block handoff-section">
         <div className="section-heading">
           <p className="eyebrow">Operating style</p>
-          <h2>Built for messy organizations and real owners.</h2>
+          <h2>I build tools that give people back time, then make them easy to own.</h2>
+          <p className="section-intro">
+            AI has given me more autonomy over my days. The small tedious tasks that do not
+            need a human in the loop can be handled by a system, while the need-to-know
+            information gets surfaced every day. Done right, it feels like having fifteen
+            employees in one without giving up judgment.
+          </p>
         </div>
         <div className="principle-grid">
           {operatingPrinciples.map(({ title, text, icon: Icon }) => (

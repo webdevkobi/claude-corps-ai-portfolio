@@ -2,12 +2,13 @@
 
 These notes explain how each portfolio case study maps to Claude Corps responsibilities.
 
-## Champions Voice AI Content Operating System
+## Champions Voice Content OS
 
-- **Discover and scope:** clarified the weekly operating rhythm around analytics, audience comments, human review, and next-week experiments.
-- **Build with Claude:** used AI to transform a Creator Vision source of truth and weekly feedback into a structured seven-day content plan.
-- **Enable:** the workflow can be run by following a repeatable weekly checklist.
+- **Discover and scope:** clarified the weekly rhythm around analytics, audience comments, human review, and next-week experiments.
+- **Build with Claude:** used AI to turn weekly feedback into a structured seven-day content plan.
+- **Enable:** the workflow can be run by opening the calendar, reviewing what landed, and repeating the loop.
 - **Judgment:** Jakobi remains the human reviewer before AI output becomes the plan.
+- **Impact:** 20K+ followers in two months, reaching thousands of young student-athletes.
 
 ## ManyChat to Notion Lead Capture Funnel
 
@@ -15,6 +16,7 @@ These notes explain how each portfolio case study maps to Claude Corps responsib
 - **Build with Claude:** connected Instagram DM automation, email capture, and Notion records.
 - **Enable:** the schema is readable by a nontechnical owner.
 - **Judgment:** public artifacts redact contact records.
+- **Impact:** 1,500+ emails collected in two months.
 
 ## Private Driveline Training App
 
@@ -30,9 +32,9 @@ These notes explain how each portfolio case study maps to Claude Corps responsib
 - **Enable:** the dashboard gives reasons and next actions instead of requiring inbox archaeology.
 - **Judgment:** private email details are redacted in the portfolio.
 
-## Shopify Web Ops
+## Champions Voice Landing Page and Web Ops
 
-- **Discover and scope:** created a manager dashboard for web work, blockers, and review paths.
-- **Build with Claude:** shipped targeted UX, accessibility, and conversion improvements.
-- **Enable:** documented definition of done, QA paths, and approval gates.
+- **Discover and scope:** focused the site around the public path from attention to waitlist and products.
+- **Build with Claude:** used AI as a second set of eyes for tedious UX, accessibility, and content checks.
+- **Enable:** kept notes clear enough for someone else to see what changed and what still needs review.
 - **Judgment:** held deployment when the intended sandbox was detected as live.
