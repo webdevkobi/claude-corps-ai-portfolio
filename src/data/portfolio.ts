@@ -67,7 +67,7 @@ export const caseStudies: CaseStudy[] = [
     title: "Champions Voice AI Content Operating System",
     eyebrow: "Human-in-the-loop growth engine",
     image: "content-system.png",
-    alt: "Sanitized capture of a Notion-style content operating system with weekly analytics and next-week planning.",
+    alt: "Redacted Notion captures showing a weekly content calendar, content matrix, performance metrics, and next-week iteration brief.",
     stack: ["Notion", "Claude", "ChatGPT Projects", "Instagram analytics", "Weekly evals"],
     metric: "20.7K followers in roughly 2-3 months",
     summary:
@@ -77,7 +77,7 @@ export const caseStudies: CaseStudy[] = [
     shipped: [
       "Created a Creator Vision source of truth and weekly feedback workflow for hooks, formats, CTAs, and content pillars.",
       "Analyzed weekly performance with a human review layer before asking AI to generate the next 7-day matrix.",
-      "Captured learning from outlier posts, including a 250K+ view format that produced about 918 follows in one review cycle.",
+      "Captured learning from outlier posts, including 250K+ and 500K+ view formats that shaped the next weekly experiments.",
     ],
     handoff:
       "The system is understandable as a weekly runbook: collect links, paste analytics, record what landed, generate next-week experiments, then review before publishing.",
@@ -90,7 +90,7 @@ export const caseStudies: CaseStudy[] = [
     title: "ManyChat to Notion Lead Capture Funnel",
     eyebrow: "Audience to owned relationship",
     image: "lead-funnel.png",
-    alt: "Sanitized capture of an Instagram DM to ManyChat to Notion lead funnel with redacted lead rows.",
+    alt: "Redacted Vercel deployment screenshot and flow summary for a ManyChat to Notion connector.",
     stack: ["ManyChat", "Notion", "Instagram DMs", "Client database", "Automation"],
     metric: "350-400 emails captured in 2-3 weeks",
     summary:
@@ -113,7 +113,7 @@ export const caseStudies: CaseStudy[] = [
     title: "Private Driveline Training App",
     eyebrow: "Source-faithful personal AI tool",
     image: "training-app.png",
-    alt: "Sanitized capture of a private training app dashboard with source counts and blurred prescription details.",
+    alt: "Redacted Driveline Trainer dashboard screenshot showing home, coach build, calendar, and workout library navigation.",
     stack: ["Node.js", "Vercel", "Blob storage", "Mobile web", "Data cleanup"],
     metric: "402 events, 98 variants, 2,374 exercise rows",
     summary:
@@ -136,7 +136,7 @@ export const caseStudies: CaseStudy[] = [
     title: "Daily Inbox Brief",
     eyebrow: "Morning triage dashboard",
     image: "daily-brief.png",
-    alt: "Sanitized daily inbox brief with brand deals, opportunities, filtered noise, and redacted email details.",
+    alt: "Redacted daily inbox brief screenshot with brand deals, opportunities, drafts ready, and blurred email details.",
     stack: ["HTML", "CSS", "JavaScript", "Gmail links", "Scheduled desktop automation"],
     metric: "8:00 AM daily operating rhythm",
     summary:
@@ -159,7 +159,7 @@ export const caseStudies: CaseStudy[] = [
     title: "Champions Voice Shopify Web Ops",
     eyebrow: "Safe deployment discipline",
     image: "shopify-ops.png",
-    alt: "Sanitized capture of Shopify operations notes with deployment guardrails, QA paths, and theme check status.",
+    alt: "Neutral operations visual summarizing Shopify deployment guardrails, verified work paths, and theme check status.",
     stack: ["Shopify Liquid", "GitHub", "Theme Check", "Accessibility", "Runbooks"],
     metric: "0 Theme Check errors on latest local batch",
     summary:

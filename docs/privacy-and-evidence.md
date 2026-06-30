@@ -4,7 +4,7 @@ This portfolio is designed for public review without exposing private records.
 
 ## What is shown
 
-- Sanitized screenshots or reconstructions of real workflows.
+- Sanitized, desaturated screenshots of real workflows.
 - High-level metrics that were used in the Claude Corps resume.
 - Architecture, handoff, and judgment notes for each project.
 
@@ -12,6 +12,7 @@ This portfolio is designed for public review without exposing private records.
 
 - Personal email addresses, client names, and DM records.
 - Private Notion database rows.
+- Post URLs and deployment/account details.
 - Private Driveline prescription details, access codes, and synced state.
 - Shopify admin/theme IDs beyond generalized workflow evidence.
 

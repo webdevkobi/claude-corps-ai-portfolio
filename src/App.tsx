@@ -87,8 +87,8 @@ function App() {
             <h2>Five proof points from real workflows.</h2>
           </div>
           <p className="section-note">
-            Screenshots are privacy-safe captures or reconstructions. Private emails,
-            client records, and training details are intentionally redacted.
+            Screenshots are privacy-safe captures from real workflows. Private emails,
+            account details, post URLs, and training specifics are intentionally redacted.
           </p>
         </div>
 

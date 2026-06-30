@@ -28,7 +28,7 @@ Each case study includes:
 
 ## Privacy Boundary
 
-This is a public portfolio, so screenshots are sanitized captures or reconstructions. Personal email addresses, client records, private Notion rows, training prescription details, access codes, and Shopify admin details are not published.
+This is a public portfolio, so screenshots are sanitized, desaturated workflow captures. Personal email addresses, client records, private Notion rows, post URLs, deployment/account details, training prescription details, access codes, and Shopify admin details are not published.
 
 See [Privacy and Evidence Notes](docs/privacy-and-evidence.md).
 
